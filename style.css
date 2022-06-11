@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+#game .winning{
+    display: flex;
+    width: 100%;
+    height: 0;
+    background: rgba(0,200,0, 0.5);
+    position: absolute;
+    top: 0;
+    transition: .1s;
+    left: 0;
+}
+body{
+    display: flex;
+    margin: 0;
+}
+#game{
+    display: grid;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 30px;
+}
+#game .inner{
+    border: black 1px solid;
+    transition: .3s;
+    display: flex;
+}
+#game .inner p{
+    margin: auto;
+    font-size: 100px;
+    height: 100%;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+#game .inner:hover{
+    background: rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+
+#win_block {
+    display: none;
+    width: 670px;
+    margin: 30px;
+    height: 500px;
+    justify-content: space-around;
+}
+#win_block span{
+    font-size: 30px;
+    margin-top:auto;
+    margin-bottom: auto;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+#win_block .again{
+    font-weight: bold;
+    cursor: pointer;
+    color: #369;
+    width: 150px;
+    position: relative;
+}
+#win_block .again:after{
+    width: 0;
+    height: 1px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    transition: .3s;
+    left: 0;
+    background: #369;
+}
+#win_block .again:hover:after{
+    width: 100%;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    display: flex;
+    width: 100%;
+}
+footer p{
+    margin: auto;
+    font-size: 25px;
+    font-family: 'Kdam Thmor Pro', sans-serif; ;
+}
+
